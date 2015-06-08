@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>ISW &#39;15</title>
+ <link href="http://pbw.kssk.pwr.edu.pl/atom.xml" rel="self"/>
+ <link href="http://pbw.kssk.pwr.edu.pl"/>
+ <updated>2015-06-09T01:43:10+02:00</updated>
+ <id>http://pbw.kssk.pwr.edu.pl</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ 
+</feed>
