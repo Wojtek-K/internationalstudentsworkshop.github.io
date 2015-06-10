@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,latin-ext);
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin:0;
+	padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	font-family: 'Libre Baskerville';
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 2em;
+
+
+	background: #099;
+	color: #FFF;
+}
+
+header
+{
+	margin:0;
+	padding:0;
+	margin-top: 5em;
+}
+
+#fixbar {
+	-webkit-transition-duration: .5s; /* Safari */
+	    transition-duration: .5s;
+	position: fixed;
+	width:100%;
+	margin:0;
+	padding: 10px 0;
+	top: 0;
+	z-index: 99;
+	background: #099;
+}
+
+#fixbar ul {
+	list-style-type: none;
+	width: 720px;
+	margin: auto;
+}
+
+
+#fixbar ul li {
+	float: right;
+}
+
+#slogo {
+	-webkit-transition-duration: .5s; /* Safari */
+	    transition-duration: .5s;
+	float: left;
+	opacity: 0;
+}
+
+#fixbar ul li a {
+	text-decoration: none;
+	margin-left: 10px;
+	border-bottom: 2px solid;
+	color: #FFF;
+	opacity: .5;
+}
+
+#fixbar ul li a.active {
+	opacity: 1;
+}
+
+h1, h2, h3, h4, h5, ul {
+	font-weight: 700;
+	font-family: 'Open Sans Condensed';
+}
+
+h1 {
+	font-size: 4em;
+	line-height: 1em;
+}
+
+h1 span {
+	font-size: .5em;
+	opacity: .75;
+	z-index: -99;
+}
+
+.issuuembed {
+	float: left;
+	background: rgba(255,255,255,.5);
+}
+
+.container
+{
+	margin:0 auto;
+	width: 720px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+hr {
+	border: 1px solid rgba(255,255,255,.1);
+}
+
+p img {
+	width: 100%;
+}
+
+a {
+	color: #FFF;
+}
+
+p {
+	margin-left:30%;
+	margin-right:0%;
+}
+
+#isw a, #slogo a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#isw::before {
+	position:absolute;
+	content: 'the 3rd';
+	margin-left: -70px;
+	opacity:.5;
+	font-size: .33em;
+	line-height: 2em;
+
+}
+
+footer {
+	margin-top: 4em;
+	padding: 2em 0;
+	background: #088;
+	text-align: center;
+}

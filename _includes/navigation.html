@@ -1,0 +1,16 @@
+<div id="fixbar">
+	<ul>
+	{% assign pages = site.pages | sort:"weight"  %}
+	{% for p in pages %}
+	{% if p.show == true %} 
+	 <li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
+	{% endif %}
+{% endfor %}
+		<span id="slogo"><a href="/">International Students Workshop</a></span>
+	</ul>
+</div>
+
+
+
+
+

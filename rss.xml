@@ -1,15 +1,28 @@
+---
+layout: null
+title : RSS Feed
+---
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-        <title>ISW &#39;15</title>
-        <description>ISW &#39;15 - </description>
-        <link>http://pbw.kssk.pwr.edu.pl</link>
-        <atom:link href="http://pbw.kssk.pwr.edu.pl/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 09 Jun 2015 01:43:10 +0200</lastBuildDate>
-        <pubDate>Tue, 09 Jun 2015 01:43:10 +0200</pubDate>
+        <title>{{ site.title | xml_escape }}</title>
+        <description>{{ site.title | xml_escape }} - {{ site.author.name | xml_escape }}</description>
+        <link>{{ site.production_url }}</link>
+        <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml" />
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <ttl>60</ttl>
 
-
+{% for post in site.posts limit:20 %}
+        <item>
+                <title>{{ post.title | xml_escape }}</title>
+                <description>{{ post.content | xml_escape }}</description>
+                <link>{{ site.production_url }}{{ post.url }}</link>
+                <guid>{{ site.production_url }}{{ post.id }}</guid>
+                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        </item>
+{% endfor %}
 
 </channel>
 </rss>

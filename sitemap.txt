@@ -1,13 +1,8 @@
-
-http://pbw.kssk.pwr.edu.pl/atom.xml
-http://pbw.kssk.pwr.edu.pl/awards.html
-http://pbw.kssk.pwr.edu.pl/committees.html
-http://pbw.kssk.pwr.edu.pl/for_authors.html
-http://pbw.kssk.pwr.edu.pl/history.html
-http://pbw.kssk.pwr.edu.pl/index.html
-http://pbw.kssk.pwr.edu.pl/photos.html
-http://pbw.kssk.pwr.edu.pl/proceedings.html
-http://pbw.kssk.pwr.edu.pl/program.html
-http://pbw.kssk.pwr.edu.pl/rss.xml
-http://pbw.kssk.pwr.edu.pl/sitemap.txt
-http://pbw.kssk.pwr.edu.pl/venue.html
+---
+# Remember to set production_url in your _config.yml file!
+title : Sitemap
+---
+{% for page in site.pages %}
+{{site.production_url}}{{ page.url }}{% endfor %}
+{% for post in site.posts %}
+{{site.production_url}}{{ post.url }}{% endfor %}
