@@ -29,6 +29,7 @@ weight: 5
 - Krzysztof Walkowiak – Wroclaw University of Technology, Poland
 - Michal Wozniak – Wroclaw University of Technology, Poland
 - Marina Yashina – Moscow Technical University of Communications and Informatics, Moscow, Russia
+- Anna Zakrzewska - Bell Labs Alcatel-Lucent, Dublin, Ireland
 - Jan Zarzycki – Wroclaw University of Technology, Poland
 - Dawid Zydek – Idaho State University, Pocatello, USA
 
@@ -43,3 +44,5 @@ weight: 5
 - Łukasz Gądek
 - Róża Goścień
 - Tomasz Kucofaj
+- Paweł Ksieniewicz
+- Justyna Kulińska
